@@ -9,7 +9,7 @@ function MyButton() {
 export default function App() {
   return (
     <div>
-      <h1>This is an application</h1>
+      <h1>This is an application.</h1>
       <MyButton />
     </div>
   );
