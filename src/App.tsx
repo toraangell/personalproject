@@ -1,25 +1,13 @@
 import React from "react";
 import "./App.css";
+import i18n from "./components/providers/i18Provider/i18n";
+import Compose from "./components/common/Compose";
+import RouterProvider from "./components/providers/RouterProvider/RouterProvider";
+
+const providers = [i18n, RouterProvider];
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src="/Icons/logo.svg" className="App-logo" alt="logo" />
-        <p>This is just a test.</p>
-        <a
-          className="App-link"
-          href="https://github.com/goldbergyoni/nodebestpractices"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Go to Github
-        </a>
-
-        <button color="red">This is a button</button>
-      </header>
-    </div>
-  );
+  return <Compose components={providers} />;
 }
 
 export default App;
