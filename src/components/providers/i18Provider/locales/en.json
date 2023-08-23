@@ -1,3 +1,23 @@
 {
-  "next": "Next"
+  "bruker": {
+    "tittel": "Bruker",
+    "tittelNavn": "Name",
+    "password": "Password",
+    "navn": "Tora"
+  },
+  "common": {
+    "next": "Next",
+    "cancel": "Close",
+    "start": "Start"
+  },
+  "planlegger": {
+    "startNyØkt": "Start a new session",
+    "planleggNyØkt": "Plan a new session",
+    "øktnavn": "Give your workout a name"
+  },
+  "navigering": {
+    "goToHome": "Go back to home",
+    "goToAccount": "Go to Account",
+    "goToPlanner": "Go to planner"
+  }
 }

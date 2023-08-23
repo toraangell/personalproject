@@ -1,3 +1,23 @@
 {
-  "next": "Neste"
+  "bruker": {
+    "title": "Bruker",
+    "tittelNavn": "Navn",
+    "passord": "Passord",
+    "navn": "Tora"
+  },
+  "common": {
+    "next": "Neste",
+    "cancel": "Avbryt",
+    "start": "Start"
+  },
+  "planlegger": {
+    "startNyØkt": "Start ny økt",
+    "planleggNyØkt": "Planlegg ny økt",
+    "øktnavn": "Skriv et øktnavn"
+  },
+  "navigering": {
+    "goToHome": "Gå tilbake til hjem",
+    "goToAccount": "Gå til Brukerinstillinger",
+    "goToPlanner": "Gå til planlegger"
+  }
 }

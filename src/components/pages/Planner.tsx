@@ -1,22 +1,39 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import NavBar from "../UIComponents/NavBar";
+import { useTranslation } from "react-i18next";
+import ListItemLine from "../lists/ListItemLine";
+import ListItemBox from "../lists/ListItemBox";
+import NestedListItemAdd from "../lists/NestedListItemAdd";
 
 const Planner: React.FC = () => {
-  const navigate = useNavigate();
+  const { t } = useTranslation();
+  const [isNestedAddExpanded, setIsNestedAddExpanded] = useState(false);
 
-  const goToHome = () => {
-    navigate("/");
+  const toggleNestedAddExpand = () => {
+    setIsNestedAddExpanded(!isNestedAddExpanded);
   };
 
   return (
     <div>
-      <h1>Welcome to the Planner page</h1>
-      <button
-        className="bg-purple-500 hover:bg-purple-300 text-purple-50 font-bold rounded-3xl py-2 px-4"
-        onClick={goToHome}
-      >
-        Go to Home
-      </button>
+      <NavBar pageTitle="Planlegger" />
+      <ListItemLine placeholder={t(`planlegger.øktnavn`)} />
+      <ListItemBox
+        label={t(`planlegger.øktnavn`)}
+        value=""
+        placeholder={t(`planlegger.øktnavn`)}
+      />
+      {isNestedAddExpanded ? (
+        <ListItemBox
+          label={t(`planlegger.leggTilOppvarming`)}
+          value=""
+          placeholder={t(`planlegger.placeholderOppvarming`)}
+        />
+      ) : (
+        <NestedListItemAdd
+          label={t(`planlegger.leggTilOppvarming`)}
+          onClick={toggleNestedAddExpand}
+        />
+      )}
     </div>
   );
 };
