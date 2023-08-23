@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Import your route components (replace these with your actual components).
 import Home from "../../pages/Home";
 import Planner from "../../pages/Planner";
+import Account from "../../pages/Account";
 
 const routes = [
   {
@@ -13,6 +14,10 @@ const routes = [
   {
     path: "/planner",
     element: <Planner />,
+  },
+  {
+    path: "/account",
+    element: <Account />,
   },
   // Add more routes as needed
 ];
