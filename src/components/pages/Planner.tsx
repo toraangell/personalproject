@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import ListItemLine from "../lists/ListItemLine";
 import ListItemBox from "../lists/ListItemBox";
 import NestedListItemAdd from "../lists/NestedListItemAdd";
+import CustomList from "../lists/CustomList";
 
 const Planner: React.FC = () => {
   const { t } = useTranslation();
@@ -12,6 +13,8 @@ const Planner: React.FC = () => {
   const toggleNestedAddExpand = () => {
     setIsNestedAddExpanded(!isNestedAddExpanded);
   };
+
+  const listItems = ["Distanse", "Tid", "Stigning", "Rep(s)", "Set(s)"];
 
   return (
     <div>
@@ -24,16 +27,17 @@ const Planner: React.FC = () => {
       />
       {isNestedAddExpanded ? (
         <ListItemBox
-          label={t(`planlegger.leggTilOppvarming`)}
+          label={t(`planlegger.oppvarming`)}
           value=""
-          placeholder={t(`planlegger.placeholderOppvarming`)}
+          placeholder={t(`planlegger.oppvarmingTekst`)}
         />
       ) : (
         <NestedListItemAdd
-          label={t(`planlegger.leggTilOppvarming`)}
+          label={t(`planlegger.oppvarming`)}
           onClick={toggleNestedAddExpand}
         />
       )}
+      <CustomList items={listItems} />
     </div>
   );
 };
