@@ -13,7 +13,9 @@
   "planlegger": {
     "startNyØkt": "Start a new session",
     "planleggNyØkt": "Plan a new session",
-    "øktnavn": "Give your workout a name"
+    "øktnavn": "Give your workout a name",
+    "oppvarming": "Add warmup",
+    "oppvarmingTekst": "Ex. Hip openers, side step.."
   },
   "navigering": {
     "goToHome": "Go back to home",

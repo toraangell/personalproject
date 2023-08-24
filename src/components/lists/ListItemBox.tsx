@@ -6,11 +6,7 @@ interface ListItemBoxProps {
   placeholder: string;
 }
 
-const ListItemBox: React.FC<ListItemBoxProps> = ({
-  label,
-  value,
-  placeholder,
-}) => {
+const ListItemBox: React.FC<ListItemBoxProps> = ({ label, value }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [text, setText] = useState(value);
 
@@ -23,10 +19,8 @@ const ListItemBox: React.FC<ListItemBoxProps> = ({
   };
 
   return (
-    <div className="mb-4 mt-4">
-      <div className="font-semibold mb-2 uppercase text-dust-500 text-sm">
-        {label}
-      </div>
+    <div className="mb-4">
+      <div className="font-semibold mb-2">{label}</div>
       <div
         className={`bg-contrast-500 rounded-lg p-4 ${
           isEditing ? "cursor-text" : "cursor-pointer"
@@ -42,8 +36,8 @@ const ListItemBox: React.FC<ListItemBoxProps> = ({
             className="bg-transparent border-none focus:outline-none w-full"
           />
         ) : (
-          <div className={`text-white ${text === "" ? "opacity-50" : ""}`}>
-            {text !== "" ? text : placeholder}
+          <div className={`text-white ${value === "" ? "opacity-50" : ""}`}>
+            {text !== "" || isEditing ? text : "Skriv her..."}
           </div>
         )}
       </div>

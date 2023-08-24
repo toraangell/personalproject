@@ -13,7 +13,9 @@
   "planlegger": {
     "startNyØkt": "Start ny økt",
     "planleggNyØkt": "Planlegg ny økt",
-    "øktnavn": "Skriv et øktnavn"
+    "øktnavn": "Skriv et øktnavn",
+    "oppvarming": "Legg til oppvarming",
+    "oppvarmingTekst": "F.eks. Hofteåpnere, sidesteg..."
   },
   "navigering": {
     "goToHome": "Gå tilbake til hjem",

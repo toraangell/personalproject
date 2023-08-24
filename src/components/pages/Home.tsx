@@ -16,7 +16,7 @@ const Home: React.FC = () => {
       <HomePageToolBar />
       <h1>Welcome to the Home Page</h1>
       <button
-        className="bg-purple-500 hover:bg-purple-300 text-purple-50 font-bold rounded-3xl py-2 px-4"
+        className="bg-purpledull-500 hover:bg-purple-300 text-purple-50 font-bold rounded-3xl py-2 px-4"
         onClick={goToPlanner}
       >
         {t(`planlegger.planleggNyØkt`)}
