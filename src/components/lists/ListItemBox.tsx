@@ -6,7 +6,11 @@ interface ListItemBoxProps {
   placeholder: string;
 }
 
-const ListItemBox: React.FC<ListItemBoxProps> = ({ label, value }) => {
+const ListItemBox: React.FC<ListItemBoxProps> = ({
+  label,
+  value,
+  placeholder,
+}) => {
   const [isEditing, setIsEditing] = useState(false);
   const [text, setText] = useState(value);
 
@@ -37,7 +41,7 @@ const ListItemBox: React.FC<ListItemBoxProps> = ({ label, value }) => {
           />
         ) : (
           <div className={`text-white ${value === "" ? "opacity-50" : ""}`}>
-            {text !== "" || isEditing ? text : "Skriv her..."}
+            {text !== "" || isEditing ? text : placeholder}
           </div>
         )}
       </div>
