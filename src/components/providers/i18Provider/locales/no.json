@@ -15,7 +15,9 @@
     "planleggNyØkt": "Planlegg ny økt",
     "øktnavn": "Skriv et øktnavn",
     "oppvarming": "Legg til oppvarming",
-    "oppvarmingTekst": "F.eks. Hofteåpnere, sidesteg..."
+    "oppvarmingTekst": "F.eks. Hofteåpnere, sidesteg...",
+    "stedTittel": "Sted",
+    "stedTekst": "F.eks. Spenst, Ute..."
   },
   "navigering": {
     "goToHome": "Gå tilbake til hjem",

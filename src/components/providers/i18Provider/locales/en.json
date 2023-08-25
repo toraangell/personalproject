@@ -15,7 +15,9 @@
     "planleggNyØkt": "Plan a new session",
     "øktnavn": "Give your workout a name",
     "oppvarming": "Add warmup",
-    "oppvarmingTekst": "Ex. Hip openers, side step.."
+    "oppvarmingTekst": "Ex. Hip openers, side step..",
+    "stedTittel": "Place",
+    "stedTekst": "Ex. Spenst, outside..."
   },
   "navigering": {
     "goToHome": "Go back to home",
