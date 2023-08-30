@@ -15,10 +15,8 @@ export default function HomePageToolBar() {
       <div className="w-9 h-9">
         <Logo />
       </div>
-      <div className="w-9 h-9">
-        <div className="" onClick={goToAccount}>
-          <AccountIcon />
-        </div>
+      <div className="relative w-9 h-9" onClick={goToAccount}>
+        <AccountIcon />
       </div>
     </header>
   );

@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../../pages/Home";
 import Planner from "../../pages/Planner";
 import Account from "../../pages/Account";
+import Password from "../../pages/Password";
 
 const routes = [
   {
@@ -19,7 +20,10 @@ const routes = [
     path: "/account",
     element: <Account />,
   },
-  // Add more routes as needed
+  {
+    path: "/password",
+    element: <Password />,
+  },
 ];
 
 function RouterProvider() {
