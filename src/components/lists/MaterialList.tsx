@@ -12,8 +12,7 @@ const MaterialList: React.FC<MaterialListProps> = ({
   const inputType = passwordStyle ? "password" : "text";
 
   //yellow
-
-  return (
+  /*  return (
     <div className="relative h-11 w-full min-w-[200px]">
       <input
         type={inputType}
@@ -25,9 +24,9 @@ const MaterialList: React.FC<MaterialListProps> = ({
       </label>
     </div>
   );
-};
-//purple
-/* 
+}; */
+  //purple
+
   return (
     <div className="relative h-11 w-full min-w-[200px]">
       <input
@@ -40,6 +39,6 @@ const MaterialList: React.FC<MaterialListProps> = ({
       </label>
     </div>
   );
-}; */
+};
 
 export default MaterialList;

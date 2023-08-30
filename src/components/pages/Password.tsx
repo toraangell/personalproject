@@ -1,8 +1,7 @@
 import MaterialList from "../lists/MaterialList";
 import { useTranslation } from "react-i18next";
 import NavBar from "../UIComponents/NavBar";
-import { Badge, Button } from "@material-tailwind/react";
-import { CheckIcon } from "lucide-react";
+import LargeFancyButton from "../buttons/LargeFancyButton";
 
 export default function Example() {
   const { t } = useTranslation();
@@ -68,13 +67,9 @@ export default function Example() {
               </p>
             </label>
           </div>
-          <button
-            className="mt-6 block w-full select-none rounded-lg bg-yellow-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-purplevibrant-500/20 transition-all hover:shadow-lg hover:shadow-purplevibrant-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
-            data-ripple-light="true"
-          >
-            Register
-          </button>
+          <LargeFancyButton
+            label={t(`planlegger.stedTittel`)}
+          ></LargeFancyButton>
           <p className="mt-4 block text-center font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
             Already have an account?
             <a
