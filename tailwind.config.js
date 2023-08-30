@@ -4,6 +4,7 @@ module.exports = {
   lightMode: "class",
   theme: {
     extend: {
+      
       colors: {
         'contrast': {
           '50': '#edf2f5', 
